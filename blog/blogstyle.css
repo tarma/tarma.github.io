@@ -1,0 +1,16 @@
+.blogtitle {
+	font-family: arial;
+	font-size: 150%;
+	color: #fff;
+	display: block;
+	padding-left: 20px;
+}
+.blogcontent {
+	margin-left: 30px;
+	padding-right: 10px;
+}
+.date {
+	text-align: right;
+	font-style: italic;
+	padding-right: 10px;
+}
