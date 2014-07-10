@@ -1,0 +1,70 @@
+div#imageSlider {
+	margin: 0px auto;
+	height: 650px;
+	width: 1024px;
+	overflow: hidden;
+}
+
+div#toLeft {
+	height: 576px;
+	width: 100px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	opacity: 1;
+	cursor: url(img/cursor/cursor_left.cur), auto;
+}
+
+div#toRight {
+	height: 576px;
+	width: 100px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	opacity: 1;
+	cursor: url(img/cursor/cursor_right.cur), auto;
+}
+
+div.sliderItem h2 {
+	font-family: "Microsoft YaHei", "微软雅黑", helvetica, arial, verdana, tahoma, sans-serif;
+}
+
+div#imageGroup {
+	position: relative;
+	height: 576px;
+}
+
+div.sliderItem {
+	position: absolute;
+	height: 650px;
+	width: 1024px;
+	transition: opacity 0.5s ease-in-out;
+}
+
+img.sliderItem {
+	height: 576px;
+	width: 1024px;
+}
+
+div#selector {
+	position: absolute;
+	top: 600px;
+	right: 0px;
+	height: 20px;
+	width: 120px;
+}
+
+div#selector span {
+	height: 18px;
+	width: 18px;
+	display: inline-block;
+	background: url(img/select/gray_dot.gif) no-repeat;
+}
+
+div#selector span:hover {
+	cursor: pointer;
+}
+
+div#selector span.selected {
+	background: url(img/select/red_dot.gif) no-repeat;
+}
