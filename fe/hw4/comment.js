@@ -1,5 +1,5 @@
 var PageNum = 0;
-var currentPage = 0;
+var currentPage;
 var commentSum;
 
 function ProcessPageNum(data) {
@@ -8,13 +8,17 @@ function ProcessPageNum(data) {
 	for (var i = 0; i < PageNum; i++) {
 		$('ul.pages').append('<li><a onclick="setCurrentPage(' + i + ')">' + (i + 1) + '</a></li>');
 	}
-	var currentItem = $('ul.pages li:eq(' + 0 + '), ul.pages li:eq(' + PageNum + ')');
+	if (!localStorage.pageID) {
+		localStorage.pageID = 1;
+	}
+	currentPage = localStorage.pageID - 1;
+	var currentItem = $('ul.pages li:eq(' + (localStorage.pageID - 1) + '), ul.pages li:eq(' + (localStorage.pageID + PageNum - 1) + ')');
 	currentItem.addClass('current');
 	currentItem.empty();
-	currentItem.append('<span>1</span>');
-	setTurn(0);
-	setStat(0);
-	getComments(0);
+	currentItem.append('<span>' + localStorage.pageID + '</span>');
+	setTurn(localStorage.pageID - 1);
+	setStat(localStorage.pageID - 1);
+	getComments(localStorage.pageID - 1);
 }
 
 function setCurrentPage(num) {
@@ -30,6 +34,7 @@ function setCurrentPage(num) {
 	setStat(num);
 	getComments(num);
 	currentPage = num;
+	localStorage.pageID = num + 1;
 }
 
 function setTurn(num) {
