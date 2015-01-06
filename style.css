@@ -4,7 +4,7 @@ body {
 	padding:0;
 	width:100%;
 	color:#959595;
-	font:normal 12px/1.8em Arial, Helvetica, sans-serif, "Microsoft YaHei";
+	font:normal 12px/1.8em Arial, Helvetica, sans-serif, "Microsoft JhengHei";
 	background:url(images/main_bg.jpg) repeat-y center center;
 }
 html, .main {
@@ -32,7 +32,7 @@ h1 {
 	margin:0;
 	padding:32px 0 32px 40px;
 	color:#63c3e8;
-	font:normal 48px/1.2em Arial, Helvetica, sans-serif, "Microsoft YaHei";
+	font:normal 48px/1.2em Arial, Helvetica, sans-serif, "Microsoft JhengHei";
 	letter-spacing:-3px;
 }
 h1 a, h1 a:hover {
@@ -41,12 +41,12 @@ h1 a, h1 a:hover {
 }
 h1 small {
 	display:block;
-	font:normal 12px/1.2em Arial, Helvetica, sans-serif, "Microsoft YaHei";
+	font:normal 12px/1.2em Arial, Helvetica, sans-serif, "Microsoft JhengHei";
 	color:#8b8b8b;
 	letter-spacing:normal;
 }
 h2 {
-	font:normal 24px/1.5em Arial, Helvetica, sans-serif, "Microsoft YaHei";
+	font:normal 24px/1.5em Arial, Helvetica, sans-serif, "Microsoft JhengHei";
 	padding:8px 0;
 	margin:8px 0;
 	color:#323a3f;
@@ -54,7 +54,7 @@ h2 {
 p {
 	margin:8px 0;
 	padding:0 0 8px 0;
-	font:normal 12px/1.8em Arial, Helvetica, sans-serif, "Microsoft YaHei";
+	font:normal 12px/1.8em Arial, Helvetica, sans-serif, "Microsoft JhengHei";
 }
 p.spec {
 	text-align:left;
@@ -75,7 +75,7 @@ a.com {
 a.com span {
 	margin:0;
 	padding:0 4px 0 0;
-	font:bold 14px/1em Arial, Helvetica, sans-serif, "Microsoft YaHei";
+	font:bold 14px/1em Arial, Helvetica, sans-serif, "Microsoft JhengHei";
 }
 .header, .content, .menu_nav, .fbg, .footer, form, ol, ol li, ul, .content .mainbar, .content .sidebar {
 	margin:0;
