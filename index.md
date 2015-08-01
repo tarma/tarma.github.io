@@ -8,7 +8,7 @@ title: Hello world!
 ### [{{ post.title }}]({{ BASE_PATH }}{{ post.url }})
 > {{ post.description }}
 
-Date: {{ post.date | date_to_string }}
+{{ post.date | date_to_string }}
 
 * * *
 {% endfor %}
